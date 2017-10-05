@@ -1,9 +1,8 @@
-### Welcome to GitHub Pages
+### Welcome!
 
-Hey guys this is [ideamove](https://mishkamn.github.io/ideamove)
+Here you can find the things Misheel does in his leisures.
 
-Hey guys this is my personal [website](http://lucoz921.blogspot.com) for college application process for Mongolian students.
-You can use the [editor on GitHub](https://github.com/MishkaMN/mishkamn.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+You can find my [blog here](http://lucoz921.blogspot.com) about U.S college application process guide dedicated to Mongolian students.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
