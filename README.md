@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+### Welcome to GitHub Pages
 
 Hey guys this is [ideamove](https://mishkamn.github.io/ideamove)
 
