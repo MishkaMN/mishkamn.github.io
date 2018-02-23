@@ -1,0 +1,144 @@
+
+body, html {
+	margin:auto;
+    font-family: 'Raleway', 'Helvetica';
+}
+
+
+h1, h2, h3 {
+	font-family: 'Raleway', 'Helvetica';
+	color: black;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	line-height: 1em;
+	margin-bottom:0em;
+	margin-top:0.2em;
+}
+
+h2 {
+	font-weight: 100;
+	font-size: 38px;
+	letter-spacing: 1px;
+	margin-top:0.3em;
+}
+
+h3 {
+	font-size: 38px;
+	font-weight: 300;
+	margin-top: 0.2em;
+	margin-bottom: 0.6em;
+}
+.navbar img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;	
+}
+
+#contact ul{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#contact li{
+	display:inline;
+	padding:15px;
+}
+
+#main {
+    transition: margin-right 0.5s;
+}
+
+#navbar-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+#navbar-name  {
+	font: bold 20px "Times New Roman";
+	color: white;
+	display: block;
+	text-align: left;
+	padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    padding-left: 10%;
+    
+    -o-transition: padding-bottom 0.4s linear; /* opera */
+    -ms-transition: padding 0.4s linear; /* IE 10 */
+    -moz-transition: padding-bottom 0.4s linear; /* Firefox */
+    -webkit-transition: padding-bottom 0.4s linear; /*safari and chrome */
+    text-decoration: none;
+}
+
+#navbar-text  {
+	color: gray;
+	display: block;
+	text-align: left;
+	padding-top: 0px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    padding-left: 10%;
+    line-height: 125%;
+    
+    -o-transition: padding-bottom 0.4s linear; /* opera */
+    -ms-transition: padding 0.4s linear; /* IE 10 */
+    -moz-transition: padding-bottom 0.4s linear; /* Firefox */
+    -webkit-transition: padding-bottom 0.4s linear; /*safari and chrome */
+    text-decoration: none;
+}
+.navbar {
+			position: fixed;
+			display: contents; 
+			align-items: center;
+			justify-content: left;
+			height: 100%;
+			width: 18%;
+			background-color: #333;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			overflow-x:hidden;
+			padding-top: 2.5%;
+		}
+
+.navbar a {
+	color: white;
+	display: block;
+	text-align: left;
+	padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 10%;
+    
+    -o-transition: padding-bottom 0.4s linear; /* opera */
+    -ms-transition: padding 0.4s linear; /* IE 10 */
+    -moz-transition: padding-bottom 0.4s linear; /* Firefox */
+    -webkit-transition: padding-bottom 0.4s linear; /*safari and chrome */
+    text-decoration: none;
+  }
+
+
+.navbar a:hover {
+	background-color: #111;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: 0.2s;
+
+}
+.padding{
+	padding-left: 22.5%;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
