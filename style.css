@@ -42,6 +42,28 @@ h3 {
 }
 
 /* Navigation bar */
+.navbar {
+	position: fixed;
+	display: contents; 
+	justify-content: left;
+	height: 100%;
+	width: 18%;
+	align-items: center;
+	
+	background-color: #333;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x:hidden;
+	padding-top: 2.5%;
+
+	-o-transition: padding-bottom 0.4s linear; /* opera */
+    -ms-transition: padding 0.4s linear; /* IE 10 */
+    -moz-transition: padding-bottom 0.4s linear; /* Firefox */
+    -webkit-transition: padding-bottom 0.4s linear; /*safari and chrome */
+    text-decoration: none;
+}
+
 .navbar img{
 	display: block;
 	margin-left: auto;
@@ -67,12 +89,12 @@ h3 {
     padding-bottom: 0px;
     padding-left: 10%;
     text-decoration: none;
+
     -o-transition: padding-bottom 0.4s linear; /* opera */
     -ms-transition: padding 0.4s linear; /* IE 10 */
     -moz-transition: padding-bottom 0.4s linear; /* Firefox */
     -webkit-transition: padding-bottom 0.4s linear; /*safari and chrome */
     text-decoration: none;
-
 }
 
 #navbar-text  {
@@ -84,27 +106,11 @@ h3 {
     padding-bottom: 0px;
     padding-left: 10%;
     line-height: 125%;
-    text-decoration: none;
-    -o-transition: padding-bottom 0.4s linear; /* opera */
-    -ms-transition: padding 0.4s linear; /* IE 10 */
-    -moz-transition: padding-bottom 0.4s linear; /* Firefox */
-    -webkit-transition: padding-bottom 0.4s linear; /*safari and chrome */
+
+    
     text-decoration: none;
 }
-.navbar {
-	position: fixed;
-	display: contents; 
-	align-items: center;
-	justify-content: left;
-	height: 100%;
-	width: 18%;
-	background-color: #333;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	overflow-x:hidden;
-	padding-top: 2.5%;
-}
+
 
 .navbar a {
 	color: white;
@@ -114,11 +120,6 @@ h3 {
     padding-right: 25px;
     padding-bottom: 15px;
     padding-left: 10%;
-    text-decoration: none;
-    -o-transition: padding-bottom 0.4s linear; /* opera */
-    -ms-transition: padding 0.4s linear; /* IE 10 */
-    -moz-transition: padding-bottom 0.4s linear; /* Firefox */
-    -webkit-transition: padding-bottom 0.4s linear; /*safari and chrome */
     text-decoration: none;
   }
 
