@@ -1,24 +1,64 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
+	<!-- Meta data -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Misheel Bayartsengel">
+    <meta name="description" content="Third-year Electrical Engineering major at UCLA. Currently seeking a hardware internship position for summer 2018.">
+    <meta name="keywords" content="Misheel Bayartsengel, UCLA, computer science, software, developer, engineer, hardware">
+    <meta name="robots" content="index, follow">
+
 	<title>Misheel Bayartsengel | Hello</title>
-	<link rel = "stylesheet" type="text/css" href="style.css"/>
+
+	<!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel = "stylesheet" type="text/css" href="style.css">
+
+	<!-- Raleway Font -->
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
+
+
 </head>
+
 <body>
 	<nav class = "navbar">
 		<div><img src='img/option1.JPG'; alt= "profile"></div>
 		<p id = "navbar-name">Misheel Bayartsengel</p>
 		<p id = "navbar-text">Third Year Electrical Engineering Student at UCLA, Class of 2019</p>
 		<ul id = "navbar-list">
-  			<li><a href="index.html#main">About</a></li>
-  			<li><a href="index.html#skills">Skills</a></li>
-  			<li><a href="index.html#projects">Projects</a></li>
-  			<li><a href="index.html#contact">Contact</a></li>
+  			<li><a href="index.html#main">About
+  				<i class="pull-right">
+  					<span class = "glyphicon glyphicon-user"></span>
+  				</i>
+  			</a></li>
+  			<li><a href="index.html#skills">Skills
+  				<i class="pull-right">
+  					<span class = "glyphicon glyphicon-wrench"></span>
+  				</i>
+  			</a></li>
+  			<li><a href="index.html#projects">Projects
+  				<i class="pull-right">
+  					<span class = "glyphicon glyphicon-heart"></span>
+  				</i>
+  			</a></li>
+  			<li><a href="index.html#education">Education
+  			<i class="pull-right">
+  					<span class = "glyphicon glyphicon-education"></span>
+  				</i>
+  			</a></li>
+  			<li><a href="index.html#contact">Contact
+  			<i class="pull-right">
+  					<span class = "glyphicon glyphicon-send"></span>
+  				</i>
+  			</a></li>
 		</ul>
 	</nav>
-	<div class = "padding">
+	<div class = "body-padding">
 	<div id = main>
 	<div>
 		<h1>About</h1>
@@ -53,39 +93,172 @@
 		In progress...
 		</p>
 	</div>
-	</div>
-	<div id = 'skills'>
-		<h1>Skills</h1>
-		<p>
-		In progress... 
-		</p>
-		<p>
-		In progress...
-		</p>
-		<p>
-		In progress... 
-		</p>
-		<p>
-		In progress...
-		</p>
-		<p>
-		In progress... 
-		</p>
-		<p>
-		In progress...
-		</p>
-		<p>
-		In progress... 
-		</p>
-		<p>
-		In progress...
-		</p>
-		<p>
-		In progress... 
-		</p>
-		<p>
-		In progress...
-		</p>
+	<div id = skills>
+        <h1> Skills </h1> 
+        <div class = "row">
+        <div class = "col-md-4">
+    <h3> Hardware </h3>
+        <ul class = "list-unstyled">
+        	<li>
+        	<div class="dropdown">
+        	<span class = "glyphicon glyphicon-chevron-right"></span>
+            <span onclick="myFunction()" class="dropbtn skill-title">Microcontrollers</span>
+        
+  			<div id="myDropdown" class="dropdown-content">
+  				<ul class = "list-unstyled">
+  				<li>
+            		<span class = "skill-title">STM32F411/405</span>
+            		<span class = "skill-rating">
+            		<span class = "glyphicon glyphicon-ok-sign"></span>
+             		<span class = "glyphicon glyphicon-ok-sign"></span>
+            		<span class = "glyphicon glyphicon-time"></span>
+           			</span>
+          		</li>
+ 		   	  	 <li>
+            	<span class = "skill-title">Teensy LC</span>
+           	    <span class = "skill-rating">
+                <span class = "glyphicon glyphicon-ok-sign"></span>
+                <span class = "glyphicon glyphicon-ok-sign"></span>
+                <span class = "glyphicon glyphicon-ok-sign"></span>
+            </span>
+            </li>
+          <li>
+            <span class = "skill-title">Arduino UNO</span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+      </ul>
+			</div>
+			</div>
+
+              <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+            </span>
+          </li>
+         
+           <li>
+            <span class = "skill-title">PCB Design</span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+           <li>
+            <span class = "skill-title">FPGA</span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+           <li>
+            <span class = "skill-title">NI MyDAQ</span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+            </span>
+          </li>
+        </ul>
+        </div>
+        <div class = "col-md-4">
+    <h3> Software </h3>
+        <ul class = "list-unstyled">
+          <li>
+            <span class = "skill-title"> Eagle </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> NI Elvis </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> Unity </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> Autodesk Inventor </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> Verilog </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+        </ul>
+        </div>
+        <div class = "col-md-4">
+    <h3> Programming </h3>
+        <ul class = "list-unstyled">
+          <li>
+            <span class = "skill-title"> C++ </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> C </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+         <li>
+            <span class = "skill-title"> Assembly </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+       
+          <li>
+            <span class = "skill-title"> Matlab/Octave </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+          <li>
+            <span class = "skill-title"> HTML/CSS </span>
+            <span class = "skill-rating">
+              <span class = "glyphicon glyphicon-ok-sign"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+              <span class = "glyphicon glyphicon-time"></span>
+            </span>
+          </li>
+        </ul>
+        </div>
+    </div>
 	</div>
 	<div id = 'projects'>
 		<h1>Projects</h1>
@@ -119,11 +292,46 @@
 		<p>
 		In progress...
 		</p>
+
+	</div>
+	<div id = 'education'>
+		<h1>Education</h1>
+		<p>
+		In progress... 
+		</p>
+		<p>
+		In progress...
+		</p>
+		<p>
+		In progress... 
+		</p>
+		<p>
+		In progress...
+		</p>
+		<p>
+		In progress... 
+		</p>
+		<p>
+		In progress...
+		</p>
+		<p>
+		In progress... 
+		</p>
+		<p>
+		In progress...
+		</p>
+		<p>
+		In progress... 
+		</p>
+		<p>
+		In progress...
+		</p>
+		
 	</div>
 	<div id = 'contact'>
 		<footer>
             <ul class = "container-fluid text-center">
-            	<h3>Contact Me!</h3>
+            	<h1>Contact Me!</h1>
         		<li><a href="mailto:misheel.bayar@ucla.edu"><img src="img/icon_mail.png" alt="Email" style="width:50px;height:50px"></a></li>
         		<li><a href="https://www.linkedin.com/in/misheel-bayartsengel" target="_blank"><img src="img/icon_linkedin.png" alt="LinkedIn" style="width:50px;height:50px"></a></li>
         		<li><a href="https://github.com/mishkamn" target="_blank"><img src="img/icon_github.png" alt="GitHub" style="width:50px;height:50px"></a></li>
@@ -131,6 +339,7 @@
       		</ul>
 		</footer>
 	</div>
+</div>
 </div>
 </body>
 </html>
