@@ -5,7 +5,7 @@ body, html {
 
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	text-align: center;
 	font-family: 'Raleway', 'Helvetica';
 	color: black;
@@ -22,7 +22,10 @@ h1 {
 }
 
 h2 {
-	margin-top:0.3em;
+	text-align: center;
+	font-size: 29px;
+	margin-top: 0.2em;
+	margin-bottom: 0.6em;
 }
 
 h3 {
@@ -31,7 +34,16 @@ h3 {
 	margin-top: 0.2em;
 	margin-bottom: 0.6em;
 }
-
+h4 {
+	font: bold;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 0.2em;
+	margin-bottom: 0.6em;
+}
+h5 {
+	margin-top:0;
+}
 .about{
 	font-size: 16px;
 }
@@ -232,7 +244,177 @@ h3 {
     color:gray;
 }
 
+/* Projects */
 
+* { box-sizing: border-box; }
+
+/* ---- button ---- */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #333;
+  border: none;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: white;
+  font-family: 'Raleway';
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #111;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: gray;
+  text-decoration: none;
+  border:none;
+  outline:none;
+}
+
+/* ---- button-group ---- */
+
+.button-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.button-group .button {
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 0;
+  float: center;
+}
+
+/* ---- isotope ---- */
+
+#projects h2 {
+    margin-bottom: 30px;
+}
+#outer-caption a{
+	color: black;
+	margin-right: 10%;
+    text-align: center;
+	text-decoration: none;
+	outline: 0;
+    margin-bottom: 40px;
+}
+#outer-caption a:hover{
+	color: gray;
+}
+
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+  width:300px;
+    height:300px;
+}
+/* ---- .element-item ---- */
+
+.element {
+	display:block;
+  position: relative;
+  overflow: hidden
+  transform: translateZ(0);
+  width:300px;
+    height:300px;
+     color: white;
+    text-decoration: none;
+    outline:0;
+}
+
+
+.element_media {
+    display: block;
+    object-fit: cover;
+    width:300px;
+    height:300px;
+     color: white;
+    text-decoration: none;
+    outline:0;
+    
+}
+.element_overlay {
+
+	opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    outline:0;
+    transition: all .35s ease-out;
+    width:300px;
+    height:300px;
+}
+.element_overlay a{
+	 color: white;
+    text-decoration: none;
+    outline:0;
+}
+.element:hover .element_overlay{
+	color: white;
+	text-decoration: none;
+	outline:0;
+	opacity: 1;
+}
+.element:hover a{
+	color: white;
+	text-decoration: none;
+	outline: 0;
+}
+.element:hover h5{
+	color: white;
+	text-decoration: none;
+	outline: 0;
+}
+.element::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+     color: white;
+    text-decoration: none;
+    outline:0;
+    background: transparent;
+    transition: background .35s ease-out;
+}
+.element:hover::before {
+    background: rgba(0, 0, 0, .7);
+     color: white;
+    text-decoration: none;
+    outline:0;
+}
+
+/*
+example of how the projects can have different customization
+.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+*/
 
 /* Contact */
 #contact ul{
