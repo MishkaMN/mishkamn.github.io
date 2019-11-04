@@ -50,6 +50,9 @@ h6 {
 	font-size: 18px;
 }
 
+.bottom-padding25{
+  padding-bottom: 25px;
+}
 .about{
 	font-size: 16px;
 }
@@ -65,21 +68,25 @@ h6 {
 }
 
 
+
+.about #resume{
+  margin: auto;
+}
 .about #imgleft{
 	float: left;
 	margin-right: 30px;
-    margin-left: 10%;
-    margin-top: 0px;
-    margin-bottom: : 0px;
-    width: 10%;
-    height: 10%;
+  margin-left: 10%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 10%;
+  height: 10%;
 }
 .about #imgright{
 	float: right;
 	margin-right: 10%;
     margin-left: 30px;
     margin-top: 0px;
-    margin-bottom: : 0px;
+    margin-bottom: 0px;
     width: 10%;
     height: 10%;
 }
@@ -330,13 +337,14 @@ h6 {
 .element {
 	display:block;
   position: relative;
-  overflow: hidden
+  overflow: hidden;
   transform: translateZ(0);
   width:300px;
-    height:300px;
-     color: white;
-    text-decoration: none;
-    outline:0;
+  height:300px;
+  color: white;
+  text-decoration: none;
+  outline:0;
+  
 }
 
 
@@ -422,10 +430,7 @@ example of how the projects can have different customization
 */
 
 /* Education */
-#education
-{
-	
-}
+
 
 /* Contact */
 #contact ul{
