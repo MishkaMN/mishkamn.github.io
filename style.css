@@ -1,10 +1,10 @@
 
+/* ---- General ---- */
 body, html {
 	margin:auto;
     font-family: 'Raleway', 'Helvetica';
 
 }
-
 h1, h2, h3, h4 {
 	text-align: center;
 	font-family: 'Raleway', 'Helvetica';
@@ -12,7 +12,6 @@ h1, h2, h3, h4 {
 	font-size: 40px;
 	font-weight: 500;
 }
-
 h1 {
 	line-height: 1em;
 	margin-bottom:0em;
@@ -20,14 +19,12 @@ h1 {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
-
 h2 {
 	text-align: center;
 	font-size: 29px;
 	margin-top: 0.2em;
 	margin-bottom: 0.6em;
 }
-
 h3 {
 	text-align: left;
 	font-size: 29px;
@@ -50,9 +47,18 @@ h6 {
 	font-size: 18px;
 }
 
+.main {
+  transition: margin-right 0.5s;
+}
+.body-padding{
+padding-left: 23%;
+padding-right: 5%;
+}
 .bottom-padding25{
   padding-bottom: 25px;
 }
+
+/* ---- About ---- */
 .about{
 	font-size: 16px;
 }
@@ -66,9 +72,6 @@ h6 {
 	color: #333;
 	text-decoration: none;	
 }
-
-
-
 .about #resume{
   margin: auto;
 }
@@ -101,16 +104,8 @@ h6 {
 	padding-right: 10%;
 
 }
-#main {
-    transition: margin-right 0.5s;
-}
 
-.body-padding{
-	padding-left: 23%;
-	padding-right: 5%;
-}
-
-/* Navigation bar */
+/* --- Navigation bar --- */
 .navbar {
 	height: 100%;
 	width: 18%;
@@ -141,21 +136,18 @@ h6 {
 }
 
 #navbar-name  {
-	font: bold 20px "Times New Roman";
+	font: 20px "Raleway";
 	color: white;
 	display: block;
 	text-align: left;
-	padding-top: 15px;
-    padding-right: 25px;
-    padding-bottom: 0px;
-    padding-left: 10%;
-    text-decoration: none;
+	
+  text-decoration: none;
 
-    -o-transition: padding-bottom 0.4s linear; /* opera */
-    -ms-transition: padding 0.4s linear; /* IE 10 */
-    -moz-transition: padding-bottom 0.4s linear; /* Firefox */
-    -webkit-transition: padding-bottom 0.4s linear; /*safari and chrome */
-    text-decoration: none;
+  -o-transition: padding-bottom 0.4s linear; /* opera */
+  -ms-transition: padding 0.4s linear; /* IE 10 */
+  -moz-transition: padding-bottom 0.4s linear; /* Firefox */
+  -webkit-transition: padding-bottom 0.4s linear; /*safari and chrome */
+  text-decoration: none;
 }
 
 #navbar-text  {
@@ -163,13 +155,11 @@ h6 {
 	display: block;
 	text-align: left;
 	padding-top: 0px;
-    padding-right: 25px;
-    padding-bottom: 0px;
-    padding-left: 10%;
-    line-height: 125%;
-
-    
-    text-decoration: none;
+  padding-right: 25px;
+  padding-bottom: 0px;
+  padding-left: 10%;
+  line-height: 125%;
+  text-decoration: none;
 }
 
 
@@ -178,14 +168,13 @@ h6 {
 	display: block;
 	text-align: left;
 	padding-top: 15px;
-    padding-right: 25px;
-    padding-bottom: 15px;
-    padding-left: 10%;
-    text-decoration: none;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 10%;
+  text-decoration: none;
   }
 
-
-.navbar a:hover {
+.navbar #navbar-list a:hover {
 	background-color: #111;
 	color: white;
 	padding-top: 20px;
@@ -194,12 +183,16 @@ h6 {
 
 }
 
-/* Skills */
-#skills {
+.navbar #navbar-name a:hover {
+  font: bold 20px "Raleway";
+}
+
+/* ---- Skills ---- */
+.skills {
 	color: #333;
 }
 
-#skills li {
+.skills li {
     font-size: 18px;
 }
 
@@ -212,7 +205,7 @@ h6 {
     font-weight: bold;
 }
 
-/* Dropdown Stuff */
+/* --- Dropdown Handler --- */
 /* Dropdown Button */
 .dropbtn {
     color: #333;
@@ -257,9 +250,6 @@ h6 {
     color:gray;
 }
 
-/* Projects */
-
-* { box-sizing: border-box; }
 
 /* ---- button ---- */
 
@@ -307,9 +297,11 @@ h6 {
   float: center;
 }
 
+* { box-sizing: border-box; }
+
 /* ---- isotope ---- */
 
-#projects h2 {
+.projects h2 {
     margin-bottom: 30px;
 }
 #outer-caption a{
@@ -324,15 +316,15 @@ h6 {
 }
 
 
-/* clear fix */
+/* ---- clear fix ---- */
 .grid:after {
   content: '';
   display: block;
   clear: both;
   width:300px;
-    height:300px;
+  height:300px;
 }
-/* ---- .element-item ---- */
+/* ---- Element Handler ---- */
 
 .element {
 	display:block;
@@ -346,7 +338,6 @@ h6 {
   outline:0;
   
 }
-
 
 .element_media {
     display: block;
@@ -416,7 +407,7 @@ h6 {
 }
 
 /*
-example of how the projects can have different customization
+NOTE  example of how the projects can have different customization 
 .element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
 .element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
 .element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
@@ -433,12 +424,12 @@ example of how the projects can have different customization
 
 
 /* Contact */
-#contact ul{
+.contact ul{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 }
-#contact li{
+.contact li{
 	display:inline;
 	padding:10px;
 }
