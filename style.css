@@ -461,6 +461,9 @@ NOTE  example of how the projects can have different customization
   .navbar_collapse_button .button{
     display: inline-block;
   }
+  .body-padding {
+    padding-left: 5%;
+  }
 }
 @media only screen and (orientation: landscape){
   .navbar {
@@ -468,6 +471,9 @@ NOTE  example of how the projects can have different customization
   }
   .navbar_collapse_button .button{
     margin-left: 0px;
+  }
+  .body-padding {
+    padding-left: 23%;
   }
 }
 
