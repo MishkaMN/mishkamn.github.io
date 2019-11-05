@@ -1,44 +1,62 @@
 /* --- NAVBAR FUNCTIONS ---*/
 
-function adjustScreen(orientation = "") {
-    // REVIEW  Feel like there would be better way to handle the logic
+function getNavbarElements() {
     var navbar, navbar_btn, body_pad;
     navbar = document.querySelector(".navbar");
     navbar_btn = document.querySelector(".navbar_collapse_button button");
     body_pad = document.querySelector(".body-padding");
+    return [navbar, navbar_btn, body_pad];
+}
+
+function foldNavbar(navbarStyle = "display:none") {
+    var navbar, navbar_btn, body_pad;
+    [navbar, navbar_btn, body_pad] = getNavbarElements();
+    navbar_btn.textContent = ">";
+    navbar_btn.style = "margin-left:0px";
+    navbar_btn.style = "display:inline-block";
+    navbar.style = navbarStyle;
+}
+
+function unfoldNavbar(navbarStyle = "display:block") {
+    var navbar, navbar_btn, body_pad;
+    [navbar, navbar_btn, body_pad] = getNavbarElements();
+    navbar_btn.textContent = "<";
+    navbar_btn.style = "margin-left:250px";
+    navbar.style = navbarStyle;
+}
+
+function adjustScreen(orientation = "") {
+    // REVIEW  Feel like there would be better way to handle the logic
+    var navbar, navbar_btn, body_pad;
+    [navbar, navbar_btn, body_pad] = getNavbarElements();
+
     // Portrait mode with nav_bar clicks
     if (orientation === "") {
-        console.log("Port, btn");
         body_pad.style = "padding-left: 5%";
         navbar_btn.style = "display:inline-block";
+
         // Unfold navigation bar
         if (navbar_btn.textContent === ">") {
-            navbar_btn.textContent = "<";
-            navbar_btn.style = "margin-left:250px";
-            navbar.style = "display:block";
+            ("unfold in side no orient");
+            unfoldNavbar();
         }
         // Fold navigation bar
         else {
-            navbar_btn.textContent = ">";
-            navbar_btn.style = "margin-left:0px";
-            navbar.style = "display:none";
+            ("fold in side no orient");
+            foldNavbar();
         }
     }
     // Portrait mode just by resizing
     else if (orientation === "Port") {
+        ("Port");
         body_pad.style = "padding-left: 5%";
-        navbar_btn.textContent = ">";
-        navbar_btn.style = "margin-left:0px";
-        navbar_btn.style = "display:inline-block";
-        navbar.style = "display:none";
+        foldNavbar();
     }
     // Landscape mode just by resizing
     else {
+        ("Land");
         body_pad.style = "padding-left: 23%";
-        navbar_btn.textContent = ">";
-        navbar_btn.style = "margin-left:0px";
-        navbar_btn.style = "display:none";
-        navbar.style = "display:block";
+        foldNavbar("display:block");
     }
 }
 
@@ -46,7 +64,7 @@ function adjustScreen(orientation = "") {
 
 function getOrientation() {
     var orientation = window.innerWidth >= window.innerHeight ? "Land" : "Port";
-    if (window.innerHeight <= 600) {
+    if (window.innerHeight <= 600 && window.innerWidth <= 800) {
         orientation = "Port";
     }
     return orientation;
@@ -71,13 +89,10 @@ document
 // Listener: navbar content
 document.querySelector(".navbar_content").addEventListener("click", function() {
     var orient, navbar, navbar_btn, body_pad;
+    [navbar, navbar_btn, body_pad] = getNavbarElements();
     orient = getOrientation();
+
     if (orient === "Port") {
-        // TODO
-        navbar = document.querySelector(".navbar");
-        navbar_btn = document.querySelector(".navbar_collapse_button button");
-        navbar_btn.textContent = ">";
-        navbar_btn.style = "margin-left:0px";
-        navbar.style = "display:none";
+        foldNavbar();
     }
 });
