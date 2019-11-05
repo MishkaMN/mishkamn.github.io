@@ -1,7 +1,9 @@
+/* --- NAVBAR FUNCTIONS ---*/
+
 function adjustScreen(orientation = "") {
-    // REVIEW Feel like there would be better way to handle the logic
+    // REVIEW  Feel like there would be better way to handle the logic
     var navbar, navbar_btn, body_pad;
-    navbar = navbar = document.querySelector(".navbar");
+    navbar = document.querySelector(".navbar");
     navbar_btn = document.querySelector(".navbar_collapse_button button");
     body_pad = document.querySelector(".body-padding");
     // Portrait mode with nav_bar clicks
@@ -40,12 +42,22 @@ function adjustScreen(orientation = "") {
     }
 }
 
-// Listener resizing
-window.onresize = function() {
+// Get orientation of the screen
+
+function getOrientation() {
     var orientation = window.innerWidth >= window.innerHeight ? "Land" : "Port";
     if (window.innerHeight <= 600) {
         orientation = "Port";
     }
+    return orientation;
+}
+
+/* --- LISTENERS ---- */
+
+// Listener resizing
+window.onresize = function() {
+    var orientation;
+    orientation = getOrientation();
     adjustScreen(orientation);
 };
 
@@ -55,3 +67,17 @@ document
     .addEventListener("click", function() {
         adjustScreen();
     });
+
+// Listener: navbar content
+document.querySelector(".navbar_content").addEventListener("click", function() {
+    var orient, navbar, navbar_btn, body_pad;
+    orient = getOrientation();
+    if (orient === "Port") {
+        // TODO
+        navbar = document.querySelector(".navbar");
+        navbar_btn = document.querySelector(".navbar_collapse_button button");
+        navbar_btn.textContent = ">";
+        navbar_btn.style = "margin-left:0px";
+        navbar.style = "display:none";
+    }
+});
