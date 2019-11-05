@@ -107,7 +107,7 @@ padding-right: 5%;
 	height: 100%;
 	width: 250px;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	top: 0;
 	left: 0;
 	background-color: #333;
@@ -129,7 +129,6 @@ padding-right: 5%;
   font-size: 10px;
   height: 50px;
   padding: none;
-  display:inline-block;
 }
 .hidden{
   display:none
@@ -454,7 +453,7 @@ NOTE  example of how the projects can have different customization
 
 
 /* Mobile Phones */
-/*
+/* it adjusts screen when the website opens, once oppened, app.js handles adjusting */
 @media only screen and (orientation: portrait){
   .navbar {
     display: none;
@@ -471,6 +470,5 @@ NOTE  example of how the projects can have different customization
     margin-left: 0px;
   }
 }
-*/
 
 
