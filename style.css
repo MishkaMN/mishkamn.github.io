@@ -435,6 +435,13 @@ NOTE  example of how the projects can have different customization
 	padding:10px;
 }
 
+/* Mobile Phones */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width:10%;
+  }
+}
+
 
 
 
