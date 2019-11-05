@@ -43,6 +43,9 @@ function adjustScreen(orientation = ""){
 // Listener resizing
 window.onresize = function(){ 
     var orientation = window.innerWidth >= window.innerHeight ? "Land" : "Port";
+    if (window.innerHeight <= 600){
+        orientation = "Port";
+    }
     adjustScreen(orientation);
 }
 

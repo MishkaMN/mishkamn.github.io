@@ -2,8 +2,12 @@
 /* ---- General ---- */
 body, html {
 	margin:auto;
-    font-family: 'Raleway', 'Helvetica';
-
+  font-family: 'Raleway', 'Helvetica';
+}
+body{
+  min-height:600px;
+  height: auto !important;
+  height:600px;
 }
 h1, h2, h3, h4 {
 	text-align: center;
